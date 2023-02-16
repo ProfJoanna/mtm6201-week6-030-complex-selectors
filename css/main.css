@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #551fc1;
+    --dark-color: #212121;
+    --padding: 1rem;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -17,12 +23,12 @@ nav ul {
 
 nav ul li {
     padding: 0.5rem 0;
-    border-top: 2px solid #551fc1;
+    border-top: 2px solid var(--primary-color);
 }
 
 nav ul li a {
     padding: 0.5rem 1rem;
-    color: #551fc1;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -37,9 +43,9 @@ main > p {
 
 /* adjacent combinator ( + ) */
 h2 + p {
-    background: #212121;
+    background: var(--dark-color);
     color: lightgray;
-    padding: 1rem;
+    padding: var(--padding);
 }
 /* sibling combinator ( ~ ) */
 .stars span {
@@ -64,30 +70,30 @@ a[href='#'] {
 
 /* element[attribute^="value"] -> starts with */
 a[href^="http"] {
-    color: #551fc1;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
 /* element[attribute*="value"] -> contains */
 a[href*='google'] {
     background: lavender;
-    padding: 1rem;
+    padding: var(--padding);
     margin-top: 1rem;
-    border-left: 4px solid #551fc1;
+    border-left: 4px solid var(--primary-color);
 }
 
 /* element[attribute$="value"] -> ends with */
 a[href$='.pdf'] {
-    background:#551fc1;
+    background:var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: var(--padding);
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
     max-width: 15rem;
     text-align: center;
     text-decoration: none;
-    box-shadow: 3px 3px 0 #212121;
+    box-shadow: 3px 3px 0 var(--dark-color);
 }
 
 /* :link :visited :hover :active */
@@ -112,13 +118,13 @@ form {
 }
 
 input[type="text"]:focus {
-    border: 2px solid #551fc1;
+    border: 2px solid var(--primary-color);
 }
 
 /* position-related states */
 /* nth-child */
 nav ul li:last-child {
-    border-bottom: 2px solid #551fc1;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* nav ul li:nth-child(even) {
@@ -147,7 +153,7 @@ input:required {
 
 /* :optional */
 input:optional {
-    border: 2px solid #551fc1;
+    border: 2px solid var(--primary-color);
 }
 
 /* :valid */
@@ -164,7 +170,7 @@ input:invalid {
 
 /* :read-only */
 form:read-only {
-    color: #551fc1;
+    color: var(--primary-color);
 }
 
 /* Pseudo-elements
@@ -197,13 +203,13 @@ h2 + p::first-line {
 
 /* ::placeholder */
 ::placeholder {
-    color: #551fc1;
+    color: var(--primary-color);
     opacity: 0.6;
 }
 
 /* ::selection */
 ::selection {
-    background: #551fc1;
+    background: var(--primary-color);
     color: white;
 }
 
@@ -216,7 +222,7 @@ h2 + p::first-line {
 
     nav ul {
         flex-direction: row;
-        background: #551fc1;
+        background: var(--primary-color);
     }
 
     nav ul li {
@@ -224,7 +230,7 @@ h2 + p::first-line {
     }
 
     nav ul li a {
-        background: #551fc1;
+        background: var(--primary-color);
         color: white;
     }
 }
