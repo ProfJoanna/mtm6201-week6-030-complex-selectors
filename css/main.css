@@ -133,8 +133,47 @@ nav ul li:nth-child(2n+1) {
     background: lavender;
 } */
 
+/*  Form related states: 
+    :required, :optional, :valid, :invalid, :read-only*/
+
+input {
+    border-radius: 3px;
+}
+
+/* :required */
+input:required {
+    border: 2px solid red;
+}
+
+/* :optional */
+input:optional {
+    border: 2px solid #551fc1;
+}
+
+/* :valid */
+input:valid {
+    /* background: lightgreen; */
+    color: darkgreen;
+}
+
+/* :invalid */
+input:invalid {
+    /* background: lightpink; */
+    color: crimson;
+}
+
+/* :read-only */
+form:read-only {
+    color: #551fc1;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
+    .container {
+        max-width: 43rem;
+        margin: 0 auto;
+    }
+    
     nav ul {
         flex-direction: row;
         background: #551fc1;
