@@ -26,6 +26,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+.stars {
+    margin-bottom: 1.5rem;
+}
+
 /* child combinator ( > ) */
 main > p {
     font-size: 1.2rem;
@@ -47,6 +51,44 @@ h2 + p {
     opacity: 0.3;
 }
 
+
+/* element[attribute] => a[href] */
+a[href] {
+    text-decoration: underline;
+}
+
+/* element[attribute="value"] => a[href="https://algonquincollege.com */
+a[href='#'] {
+    text-decoration: none;
+}
+
+/* element[attribute^="value"] -> starts with */
+a[href^="http"] {
+    color: #551fc1;
+    font-weight: bold;
+}
+
+/* element[attribute*="value"] -> contains */
+a[href*='google'] {
+    background: lavender;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 4px solid #551fc1;
+}
+
+/* element[attribute$="value"] -> ends with */
+a[href$='.pdf'] {
+    background:#551fc1;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    max-width: 15rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 3px 0 #212121;
+}
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
