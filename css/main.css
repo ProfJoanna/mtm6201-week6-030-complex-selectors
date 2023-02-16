@@ -115,6 +115,24 @@ input[type="text"]:focus {
     border: 2px solid #551fc1;
 }
 
+/* position-related states */
+/* nth-child */
+nav ul li:last-child {
+    border-bottom: 2px solid #551fc1;
+}
+
+/* nav ul li:nth-child(even) {
+    background: rgb(250, 242, 230);
+}
+
+nav ul li:nth-child(odd) {
+    background: lavender;
+}
+
+nav ul li:nth-child(2n+1) {
+    background: lavender;
+} */
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     nav ul {
