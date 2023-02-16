@@ -78,8 +78,12 @@ a[href^="http"] {
 a[href*='google'] {
     background: lavender;
     padding: var(--padding);
-    margin-top: 1rem;
     border-left: 4px solid var(--primary-color);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: block;
+    width: calc(100% - 4rem - 4px);
 }
 
 /* element[attribute$="value"] -> ends with */
