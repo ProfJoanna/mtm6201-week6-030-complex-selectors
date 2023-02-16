@@ -167,13 +167,53 @@ form:read-only {
     color: #551fc1;
 }
 
+/* Pseudo-elements
+::placeholder
+::selection */
+
+/* ::after */
+a[href$='.pdf']::after{
+    content: '\2193';
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+}
+
+/* ::before */
+
+/* ::first-letter */
+h2 + p::first-letter {
+    float: left;
+    font-size: 3rem;
+    padding-right: 0.3rem;
+    color: white;
+}
+
+/* ::first-line */
+h2 + p::first-line {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ::placeholder */
+::placeholder {
+    color: #551fc1;
+    opacity: 0.6;
+}
+
+/* ::selection */
+::selection {
+    background: #551fc1;
+    color: white;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 43rem;
         margin: 0 auto;
     }
-    
+
     nav ul {
         flex-direction: row;
         background: #551fc1;
