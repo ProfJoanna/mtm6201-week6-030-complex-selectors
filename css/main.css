@@ -90,6 +90,22 @@ a[href$='.pdf'] {
     box-shadow: 3px 3px 0 #212121;
 }
 
+/* :link :visited :hover :active */
+/* LoVe HAte */
+main a:link { 
+    font-weight: normal;
+}
+
+main a:visited {
+    color: rgb(187, 20, 220);
+}
+main a:hover {
+    font-weight: bold;
+}
+main a:active {
+    font-size: 1.3rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     nav ul {
